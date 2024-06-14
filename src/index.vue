@@ -120,10 +120,7 @@
 /* eslint-disable */
 import ajax from "./ajax";
 
-const isZhCN = _ =>
-  (navigator.language || navigator.browserLanguage).includes("zh");
-
-const lang = isZhCN ? "zh" : "en";
+const lang = (navigator.language || navigator.browserLanguage).includes("zh") ? "zh" : "en";
 
 const TRANSLATIONS = {
   readonlyTipText: { zh: "不可更改", en: "Readonly" },
